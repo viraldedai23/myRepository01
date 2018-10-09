@@ -15,6 +15,4 @@ steps:
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
 
-- powershell: Login-AzureRmAccount
-- powershell: Get-AzureRmSubscription
-- powershell: Select-AzureRmSubscription -SubscriptionId <Your subscription ID>
+- powershell: myresourcegroupdeploy.ps1

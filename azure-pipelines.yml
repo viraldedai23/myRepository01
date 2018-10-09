@@ -15,4 +15,4 @@ steps:
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
 
-- powershell: New-AzureRmResourceGroupDeployment -ResourceGroupName "myresourcegroup01" -name "mydatalakestore02" -TemplateUri "https://raw.githubusercontent.com/viraldedai23/myRepository01/master/datalakestore.json" -TemplateParameterUri "https://raw.githubusercontent.com/viraldedai23/myRepository01/master/datalakestore_parameter.json"
+- powershell: New-AzureRmResourceGroupDeployment -ResourceGroupName "myresourcegroup01" -name "mydatalakestore01" -TemplateUri "https://raw.githubusercontent.com/viraldedai23/myRepository01/master/datalakestore.json" -TemplateParameterUri "https://raw.githubusercontent.com/viraldedai23/myRepository01/master/datalakestore_parameter.json"

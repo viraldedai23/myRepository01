@@ -1,0 +1,22 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+pool:
+  vmImage: 'Ubuntu 16.04'
+
+steps:
+- script: echo Hello, world!
+  displayName: 'Run a one-line script'
+
+- script: |
+    echo Add other tasks to build, test, and deploy your project.
+    echo See https://aka.ms/yaml
+  displayName: 'Run a multi-line script'
+
+- powershell:  # inline script
+echo "Creating New Resource Group"
+New-AzureRmResourceGroup -Name $ResourceGroup -Location $resourceGroupLocation 
+echo  " beginning the AWB installation "
+New-AzureRmResourceGroupDeployment -Name $ARMDeploymentname -ResourceGroupName $ResourceGroup -TemplateUri  $TemplateURI -TemplateParameterUri $TemplateParameterUri 

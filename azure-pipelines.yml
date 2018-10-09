@@ -15,4 +15,9 @@ steps:
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
 
-- powershell: New-AzureRmResourceGroupDeployment -Name "mydeployment01" -ResourceGroupName "myresourcegroup01" -TemplateUri https://raw.githubusercontent.com/azure/azure-quickstart-templates/master/101-data-factory-v2-transform-using-spark/azuredeploy.json
+  - name: Run powershell script 
+    hosts: all  
+    gather_facts: false 
+    tasks: 
+      - name: Run powershell script 
+        script: myresourcegroupdeploy.ps1

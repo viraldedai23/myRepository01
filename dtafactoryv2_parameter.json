@@ -1,0 +1,15 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "DataFactoryV2name": {
+            "value": ""
+        },
+        "DataFactoryV2location": {
+            "value": ""
+        },
+        "DataFactoryV2numberOfResources": {
+            "value": 1
+        }
+    }
+}

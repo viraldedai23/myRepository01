@@ -6,7 +6,7 @@
       "value": "mydatalakestore01"
     },
     "DataLakeStorelocation": {
-      "value": "eastus"
+      "value": "westeurope"
     }
 }
 }
